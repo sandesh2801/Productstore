@@ -1,8 +1,6 @@
 $(document).ready(function(){
-  
   let itemId= sessionStorage.getItem("productIdSelected");
- 
-  console.log(itemId);
+   console.log(itemId);
   $("#txtid").val(itemId);
   $("#txtquantity").val("0");
  
@@ -33,7 +31,6 @@ $(document).ready(function(){
    {
        alert('Something went wrong');
    }
-
 });
 
 
@@ -57,7 +54,6 @@ var addToCart = function () {
           },
     error: function(err)
             {
-               
                 console.log (err);
             }
 });
@@ -66,8 +62,6 @@ var addToCart = function () {
 
 var removeFromCart = function () {
   var pname = document.getElementById("txtid").value;
-  var pquant = document.getElementById("txtquantity").value;
- 
- 
+  var pquant = document.getElementById("txtquantity").value; 
 };
 
